@@ -1,0 +1,1011 @@
+@media only screen and (max-width: 576px) {
+     .chat {
+        display: none;
+    }
+    
+    .arrange__contain {
+    
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+        &-video {
+            display: none;
+        
+
+        }
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        .arrange__contain::-webkit-scrollbar {
+            display: hide;
+        }
+    }
+
+
+
+    .datepicker {
+        display: none;
+        // background-color: #ce9906;
+        // position: absolute;
+        // top: 60%;
+        // transform: translateY(-50%);
+        // background-color: rgba(255, 255, 255, 0.3);
+        // filter: blur(30px);
+        // height: 30rem;
+        // width: 100%;
+
+        &__content {
+            margin: 0 20px;
+            
+            & input{
+                width: 90%;
+                margin: 2px 4%;
+                font-size: 1.7rem;
+            }
+            
+            & button{
+                width: 40%;
+                margin: 0 25%;
+            }
+ 
+
+         }
+
+    }
+
+    .journey__map {
+        height: 100vh;
+      
+        display: flex;
+        flex-direction: column;
+
+
+        & .sidebar {
+       
+            height: 90vh;
+
+            &-hide {
+                flex: 0 0 330px;
+                margin: 0.6rem;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                & button {
+                    width: 100px;
+                    height: 20px;
+                }
+
+                & .item2 {
+              
+                    & *{
+                   
+                        font-size: 1.4rem;
+                        margin-bottom:0.3rem;
+                    }
+                    & h3{
+                        background-color: #5fd3ba6c;
+                        font-size: 2.1rem;
+                   
+                        border-bottom: 1px solid rgb(199, 199, 199);
+                        width: 100%;
+                        font-weight: bold;
+                        
+                    }
+                    
+                }
+
+                & .lbl {
+
+                    & button {
+                        width: 160px;
+                    }
+
+                    .cy {
+                   
+                        & input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        & input[type="checkbox"]+label {
+                            border: 1px solid #6c757d;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                        
+                        }
+
+                        & input[type="checkbox"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+
+                    }
+                    .picker{
+                        & input[type="radio"] {
+                            display: none;
+                        }
+
+                        & input[type="radio"]+label {
+                            border: 1px solid #6c757d;
+                            
+                            cursor: pointer;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                        
+                        }
+
+                        & input[type="radio"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+                    }
+
+                    .cat {
+                        justify-items: center;
+                        width: 100%;
+                        align-items: center;
+
+                        & input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        & input[type="checkbox"]+label {
+                            border: 1px solid #6c757d;
+                            cursor: pointer;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                           
+                        }
+
+                        & input[type="checkbox"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+
+
+                    }
+                }
+            }
+
+            &__grid {
+                height: 100%;
+                display: grid;
+                grid-template-rows: 9% 75% ;
+
+              
+
+                & .grid-item {
+                    &-t {
+                        margin: 10px auto;
+                        position: relative;
+                        width: 100%;
+                        text-align: center;
+                        overflow-x: hidden;
+
+                        & h3{
+                            display: none;
+                        }
+
+                        & .daysbox {
+                            display: flex;
+                            padding: 5px;
+                       
+                            position: absolute;
+                      
+
+                            & .days {
+                                list-style: none;
+                                background: skyblue;
+                                width: 9rem;
+                                height: 4rem;
+                                margin: 0.1rem;
+                                text-align: center;
+                                padding-top: 0.75rem;
+                                font-size: 1.6rem;
+                                font-family: 'cwTeXYen', sans-serif;
+                                font-weight: 600;
+                                color: currentColor;
+
+                                &:active {
+                                    background: rgb(198, 238, 248);
+                                }
+
+                            }
+                        }
+
+
+                        & .btnbox-l {
+                            position: absolute;
+                            top: 0;
+                            width: 25px;
+                            height: 100%;
+                            left: -5px;
+                            // background-color: white;
+                            
+
+
+                            & .left {
+                                position: absolute;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 25px;
+                                height: 100%;
+                                // background: white;
+                                z-index: 1;
+
+                            }
+                        }
+
+                        & .btnbox-r {
+                            position: absolute;
+                            right: 0;
+                            width: 25px;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+
+
+                            & .right {
+                                position: absolute;
+                                left: 0;
+                                width: 26px;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                // background: white;
+                                z-index: 1;
+                            }
+
+                        }
+
+
+
+
+                    }
+
+                    &-m {
+                   
+                        height: inherit;
+                        width: 100%;
+                        overflow-y: scroll;
+                        margin: 0px auto;
+
+
+                        & .col {
+                      
+                            flex: 1;
+                            width: 100%;
+                            border: solid 1px #6c757d;
+                            margin: 3px;
+                            // vertical-align: top;
+
+                            & *{
+                                // font-family: cwTeXYen, sans-serif;
+                                font-size: 1.4rem;
+                                margin-bottom:0.3rem;
+                            }
+
+                            & .title {
+                                background-color: var(--primary-bule);
+                                width: 100%;
+                                color: #eee;
+                                display: inline-grid;
+                            }
+                            & p{
+                                color: rgb(0, 0, 0);
+                                margin-left: 6%;
+                                display: inline;
+                                
+                            }
+                            & input{
+                                font-size: 1.4rem;
+                                display: inline;
+                                margin-top: 0.3rem;
+                            }
+
+
+                        }
+
+                        & .item {
+             
+                            display: grid;
+                            flex-direction: column;
+                            margin-bottom: 0;
+                            margin-top: 0.3rem;
+                            border: solid 1px #eee;
+
+
+                            & .weather-info{
+                                display: inline-flex;
+                                align-items: baseline;
+                                justify-content: space-around;
+
+                                & p{
+                                    flex: 1;
+                                }
+                            }  
+                            
+                            & h3{
+                                font-size: 2.1rem;
+                                margin-left: 5%;
+                                border-bottom: 1px solid #333;
+                                width: 90%;
+                                font-weight: bold;
+                            }
+
+                            & .adjtime {
+                                display: flex;
+                                align-items: center;
+                               
+                            }
+
+                            & button {
+                                border-style: none;
+                                height: 5px;
+                                font-size: 3px;
+                                background: #fd9090da;
+                                font-size: 10px;
+                                height: 20px;
+                                & i{
+                                    font-size: 10px;
+
+                                    & i{
+                                        
+                                        font-size: 10px;
+                                    }
+                                }
+
+                                
+                            }
+                        }
+
+
+                    }
+
+                    &-b {
+                    display: none;
+                    }
+
+                }
+
+
+
+
+            }
+
+
+
+        }
+
+        & .mapbox {
+            // background-color: brown;
+            flex: 1;
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            & map-pag2 {
+                width: 100%;
+                height: 100%;
+            }
+
+
+        }
+
+
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    // .chat {
+    //     display: none;
+    // }
+
+    .noscroll {
+        position: fixed; 
+        overflow-y: hidden;
+        height: 100vh;
+    }
+
+    .arrange__body {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        overflow-y: hidden;
+        min-width: 100%;
+
+    }
+
+
+    .arrange__contain {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        transition: all .8s;
+
+    
+
+        &-video {
+            width: 100%;
+            height: 100vh;
+            z-index: -2;
+            transition: height .3s;
+
+        }
+    }
+
+    @media(min-aspect-ratio:16/9) {
+        .arrange__contain-video {
+          object-fit: cover;
+         
+        }
+    }
+
+    @media(max-aspect-ratio:16/9) {
+        .arrange__contain-video {
+            width:  100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .datepicker {
+        background-color: #ce9906;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.3);
+        filter: blur(20px);
+        height: 20%;
+        width: 100%;
+
+        &__content {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            margin: 0 auto;
+            transform: translateY(-50%);
+            justify-content: center;
+
+            & input {
+                font-size: 2rem;
+                border-style: none;
+                background: transparent;
+                font-weight: 700;
+                margin-left: 3rem;
+                min-width: 250px;
+                outline: none;
+
+                &:focus{
+                    width:250px;
+                  
+                }
+
+                &::placeholder {
+                    color: #eee;
+                }
+
+            }
+
+            & button {
+                font-size: 2rem;
+                width: 20rem;
+                margin-left: 3rem;
+                border-radius: 15px;
+            }
+
+
+        }
+
+    }
+
+    .journey__map {
+        height: 90vh;
+        display: flex;
+        position: inherit;
+        top:10vh;
+        overflow: hidden;
+
+        & .sidebar {
+            flex: 0 0 300px;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+
+
+            &-tg{
+                flex-direction: column;
+                justify-content: space-between;
+                overflow-x: hidden;
+                width: 100%;
+            }
+
+            &-hide {
+                flex: 0 0 0;
+                margin: 0;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                
+      
+
+               
+                &-tg{
+                    flex: 0 0 330px;
+                    margin: 1.5rem 0 0 1.5rem;
+                }
+
+               
+
+                & button {
+                    width: 100px;
+                    height: 20px;
+                }
+
+                & .item2 {
+                    min-height: 50px;
+                    min-width: 200px;
+                    display: grid;
+                    margin-bottom: 1rem;
+                    background-color: #ffffffd2;
+                   
+                 
+                    & *{
+                        // font-family: cwTeXYen, sans-serif;
+                        font-size: 1.4rem;
+                        margin-bottom:0.3rem;
+                    }
+                    & h3{
+                        background-color: #5fd3ba6c;
+                        font-size: 2.1rem;
+                        border-bottom: 1px solid rgb(199, 199, 199);
+                        width: 100%;
+                        font-weight: bold;
+                        
+                    }
+                    & p{
+                        color: rgb(0, 0, 0);
+                        margin-left: 6%;
+                        display: inline;
+                        
+                    }
+                    & .adto{
+                        width: 100%;
+                        height: 3px;
+                        font-size: 10px;
+                        background-color: #6c757d;
+                        justify-content: center;
+                        display: flex;
+                        transition: all .3s;
+
+                        &:hover{
+                            height: 2.2rem;
+                            background-color: #f5b733b0;
+                            font-size: 1.8rem;
+                            cursor: pointer;   
+                            
+                        }
+                    }
+
+                }
+
+                & .lbl {
+
+                    & button {
+                        width: 160px;
+                    }
+
+                    .cy {
+                       
+
+                        & input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        & input[type="checkbox"]+label {
+                            border: 1px solid #6c757d;
+                            
+                            cursor: pointer;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                            transition: all .2s;
+                            
+                            &:hover{
+                                box-shadow: 1px 1px 3px;
+                            }
+
+                        }
+
+                        & input[type="checkbox"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+
+                    }
+
+                    .picker{
+                        & input[type="radio"] {
+                            display: none;
+                        }
+
+                        & input[type="radio"]+label {
+                            border: 1px solid #6c757d;
+                            
+                            cursor: pointer;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                            transition: all .2s;
+                            
+                            &:hover{
+                                box-shadow: 1px 1px 3px;
+                            }
+
+                        }
+
+                        & input[type="radio"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+                    }
+
+                    .cat {
+                        justify-items: center;
+                        width: 100%;
+                        align-items: center;
+
+                        & input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        & input[type="checkbox"]+label {
+                            border: 1px solid #6c757d;
+                            cursor: pointer;
+                            padding: 3px 10px;
+                            margin-bottom: 0.2rem;
+                            font-size: 2rem;
+                            font-family: 'cwTeXYen', sans-serif;
+                            transition: all .2s;
+                            
+                            &:hover{
+                                box-shadow: 1px 1px 3px;
+                            }
+
+                        }
+
+                        & input[type="checkbox"]:checked+label {
+                            background-color: #f3d42e;
+                            box-shadow: 1px 1px 3px;
+                        }
+
+
+                    }
+                }
+            }
+
+            &__grid {
+                height: 100%;
+                display: grid;
+                grid-template-rows: 12% 80% 1fr;
+                overflow: hidden;
+
+                & .grid-item {
+                    &-t {
+                        margin: 5px;
+                        position: relative;
+                        width: 96%;
+                        overflow: hidden;
+                        & input{
+                            border: none;
+                            border-bottom: 1px solid;
+                            outline: none;
+                            margin-left: 16px;
+                        }
+
+                        & .daysbox {
+                            display: flex;
+                            padding: 5px;
+                            margin: 0 10px 0 10px;
+                            position: absolute;
+                            transition: all .5s;
+
+
+                            & .days {
+                                list-style: none;
+                                background: skyblue;
+                                width: 9rem;
+                                height: 4rem;
+                                margin: 0.1rem;
+                                text-align: center;
+                                padding-top: 0.75rem;
+                                font-size: 1.6rem;
+                                font-family: 'cwTeXYen', sans-serif;
+                                font-weight: 600;
+                                color: currentColor;
+
+                                &:hover {
+                                    background: rgb(198, 238, 248);
+                                }
+
+                            }
+                        }
+
+
+                        & .btnbox-l {
+                            position: absolute;
+                            top: 40%;
+                            width: 25px;
+                            height: 50%;
+                            display: flex;
+                            align-items: center;
+                            left: -3px;
+
+
+                            & .left {
+                                position: absolute;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 25px;
+                                height: 100%;
+                                // background: white;
+                                z-index: 1;
+
+                            }
+                        }
+
+                        & .btnbox-r {
+                            position: absolute;
+                            right: -5px;
+                            width: 25px;
+                            height: 50%;
+                            display: flex;
+                            align-items: center;
+                            top: 40%;
+
+
+                            & .right {
+                                position: absolute;
+                                left: 0;
+                                width: 26px;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                // background: white;
+                                z-index: 1;
+                            }
+
+                        }
+
+
+
+
+                    }
+
+                    &-m {
+                        // background-color: #ce9906;
+                        height: inherit;
+                        overflow-y: scroll;
+
+
+                        & .col {
+                            flex: 1;
+                            min-width: 280px;
+                            max-width: 280px;
+                            border: solid 1px #6c757d91;
+                            margin: 6px;
+                            vertical-align: top;
+
+                            & *{
+                                // font-family: cwTeXYen, sans-serif;
+                                font-size: 1.4rem;
+                                margin-bottom:0.3rem;
+                            }
+
+                            & .title {
+                               
+                                background-color: var(--primary-bule);
+                                width: 100%;
+                                color: #eee;
+                                display: inline-grid;
+                                text-align-last: center;
+                               
+    
+                            }
+                            & p{
+                                color: rgb(0, 0, 0);
+                                margin-left: 6%;
+                                display: inline;
+                                
+                            }
+                            & input{
+                                font-size: 1.4rem;
+                                display: inline;
+                                margin-top: 0.3rem;
+                            }
+                            & .bg-line{
+                                border-left: 1px dashed;
+                                // height: 30px;
+                                // align-items: center;
+                            }
+
+                        }
+
+                        & .item {
+                            display: grid;
+                            flex-direction: column;
+                            margin-bottom: 0;
+                            margin-top: 0.3rem;
+                            border: solid 1px #eee;
+
+                            & .weather-info{
+                                display: inline-flex;
+                                align-items: baseline;
+                                justify-content: space-around;
+
+                                & p{
+                                    flex: 1;
+                                }
+                            }     
+                           
+                           
+                            & h3{
+                                font-size: 2.1rem;
+                                margin-left: 5%;
+                                border-bottom: 1px solid #333;
+                                width: 90%;
+                                font-weight: bold;
+                            }
+
+
+                            & .adjtime {
+                                display: flex;
+                                align-items: center;
+                                // justify-content: space-between;
+
+                                & .mw-25, min-w-25{
+                                    width: 25%;
+                                    text-align: center;
+                                
+                                }
+                            }
+
+                            & button {
+                                border-style: none;
+                                height: 5px;
+                                transition: all .3s;
+                                font-size: 0;
+                                // display: none;
+
+                                & i{
+                                    font-size: 0;
+                                }
+
+                                &:hover{
+                                    border-style: none;
+                                    background: #fd9090da;
+                                    font-size: 10px;
+                                    height: 20px;
+
+                                    & i{
+                                        font-size: 10px;
+                                    }
+                                }
+                               
+                            }
+                        }
+
+
+                    }
+
+                    &-b {
+                        position: sticky;
+                        bottom: 0;
+
+                        & button{
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+
+
+
+            }
+
+
+
+        }
+
+        & .mapbox {
+            // background-color: brown;
+            flex: 1;
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            & .map-pag2 {
+                width: 100%;
+                height: 100%;
+            }
+
+
+        }
+
+
+
+    }
+
+}
+
+.sift{
+    background: #6c757d;
+    width: 0;
+
+    & .rbtn{
+        position: absolute;
+        top: 15%;
+        background: #636464;
+        color: #f8f9fa;
+        border-radius: 0 3px 3px 0;
+        width: 23px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        padding: 1px;
+
+        &:hover{
+            background: rgb(126, 126, 126);
+        }
+   
+    }
+    & .lbtn{
+        position: absolute;
+       
+        top: 15%;
+        background: #636464;
+        transform: translateX(-19px);
+        color: #f8f9fa;
+        border-radius: 3px 0 0 3px;
+        width: 23px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        padding: 3px;
+       
+        
+        &:hover{
+            background: rgb(126, 126, 126);
+        }
+
+    }
+
+
+ 
+
+    &:hover{
+        background: #333;
+    }
+}

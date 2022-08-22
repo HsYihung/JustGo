@@ -1,0 +1,202 @@
+
+.navbarC {
+    background-color:#8078e9;
+    z-index: 6;
+}
+
+.chatimg {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 20px;
+    box-shadow: 3px 3px 10px #333;
+    border: 2px solid #767676;
+}
+
+
+.myshadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.viewcolor {
+    background-color: #ebebf5;
+    border-radius: 10px;
+    padding: 15px
+}
+
+#bloginfo {
+    font-size: 1.9rem !important;
+    font-family: 'cwTeXYen', sans-serif !important;
+}
+
+.red {
+    color: red;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.3);
+}
+
+.viewcolor {
+    background-color: #ebebf5;
+    border-radius: 10px;
+    padding: 15px
+}
+
+#userimg {
+    border-radius: 50%;
+    height: 65px;
+    width: 70px;
+}
+
+
+.Details {
+    list-style-type: none;
+}
+
+.list-group-item {
+    color: #f9ab55 !important;
+    font-weight: bold !important;
+    box-shadow: 0 !important;
+    border: none !important;
+    padding: 2px !important;
+}
+
+    .list-group-item:hover {
+        background-color: transparent !important;
+        color: #f58a07 !important;
+        border: none !important;
+        font-weight: bold !important;
+        box-shadow: 0 !important;
+        transition: width 2s, height 2s !important;
+        -webkit-transform: rotate(1deg) !important;
+    }
+
+    .list-group-item.active {
+        background-color: transparent !important;
+        color: #f58a07 !important;
+        border: none !important;
+        font-weight: bold !important;
+        box-shadow: 0 !important;
+    }
+
+.btn-primary, .btn-outline-primary {
+    background-color: #669ed6 !important;
+    color: #fff !important;
+    border: none !important;
+    font-size: 1.7rem !important;
+}
+
+    .btn-primary:hover, .btn-outline-primary:hover {
+        background-color: #084887 !important;
+        color: #fff !important;
+        border: none !important;
+        font-size: 1.7rem !important;
+    }
+
+.btn-secondary {
+    background-color: #8078e9 !important;
+    color: #fff !important;
+    border: none !important;
+    font-size: 1.7rem !important;
+}
+
+    .btn-secondary:hover {
+        background-color: #8078e9 !important;
+        color: #fff !important;
+        border: none !important;
+        font-size: 1.7rem !important;
+    }
+
+
+#day {
+    background-color: #084887;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 9px;
+    margin-bottom: 5px;
+}
+
+.groupimg {
+    width: 600px;
+    margin: 10px -10px;
+    display: row;
+    flex-wrap: wrap;
+}
+
+    .groupimg > img {
+        width: 180px;
+        height: 150px;
+        margin: 10px 10px;
+        cursor: pointer;
+        justify-content: space-around;
+    }
+
+    .groupimg::after {
+        display: block;
+        width: 180px;
+    }
+
+/*日期選擇*/
+.available {
+    animation: none;
+}
+
+.carousel-inner img{
+    object-fit:cover;
+}
+
+.timepicker {
+    border-style: none;
+    background: transparent;
+    width: 110px;
+    font-size:1.6rem;
+}
+
+    .timepicker:focus {
+        border-style: none;
+        background: transparent;
+        width: 110px;
+    }
+
+    .timepicker:blur {
+        border-style: none;
+        background: transparent
+    }
+
+@media only screen and (max-width: 576px) {
+    #hidden {
+        display: none;
+    }
+}
+
+
+/*檢視相關部落格*/
+.box {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    overflow: hidden;
+}
+
+img {
+    transition: .5s;
+}
+
+.box:hover img {
+    transform: scale(1.4);
+}
+
+.cover-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 120px;
+}
